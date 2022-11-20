@@ -14,6 +14,7 @@ const Header = ({ bgColor , color}) => {
 Header.defaultProps = {
     bgColor: 'rgba(0,0,0,0.4)',
     color: '#ff6a95'
+    
 }
 
 //validar las props con ProTypes

@@ -9,7 +9,7 @@ const FeedbackItem = () =>{
     const[rating, setRating ] = useState(2)
     const[text, setText ] = useState("Mejorar curso, mejores recursos")
 
-    const cambiarNota=()=>{
+    const sumarNota=()=>{
         //cambiar estado a rating
         //parametro para el valor anterior
         setRating((prev)=>{
@@ -35,19 +35,18 @@ const FeedbackItem = () =>{
         <div className="text-display">
             { text }
         </div>
-        
-        <button className="btn-secondary" onClick={ cambiarNota }>
+        <br/>
+        <button className="btn btn-primary" onClick={ sumarNota }>
             Sumar nota
         </button>
-        <br />
-        <button onClick={ restarNota }>
+        <br/>
+        <br/>
+        <button className="btn btn-secondary" onClick={ restarNota }>
              Restar nota
         </button>
-        <br />
        
     </div>
     )
-
 }
 
 export default FeedbackItem
